@@ -193,13 +193,13 @@ namespace Beds2DPatch
                         minz = edgeShift - maxEdgeOffset;
                         maxz = edgeShift + maxEdgeOffset;
                     }
-                    if (slot / bedSize.x == bedSize.z - 1)
+                    else if (slot / bedSize.x == bedSize.z - 1)
                     {
                         // Bottom
                         minz = edgeShift - maxEdgeOffset;
                         maxz = edgeShift + maxOffset;
                     }
-                    if (slot / bedSize.x == 0)
+                    else if (slot / bedSize.x == 0)
                     {
                         // Top
                         maxz = maxEdgeOffset;
