@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Beds2DPatch\Assemblies\Beds2DPatch.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Beds2DPatch\Source\Beds2DPatch\obj\Debug\Beds2DPatch.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Beds2DPatch\Source\Beds2DPatch\obj\Debug\Beds2DPatch.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Beds2DPatch\Source\Beds2DPatch\obj\Debug\Beds2DPatch.dll
