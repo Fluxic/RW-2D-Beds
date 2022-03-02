@@ -1,4 +1,4 @@
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -99,8 +99,6 @@ namespace Beds2DPatch
                 }
 
                 // Angle
-                //renderData.angle = Rand.RangeSeeded(-15f, 15f, seed + 1050);
-                //renderData.angle = Rand.RangeSeeded(-45f, 45f, seed + 200);
                 renderData.angle = Rand.RangeSeeded(-180f, 180f, seed + 200);
 
                 // Position
@@ -118,17 +116,12 @@ namespace Beds2DPatch
                 if (bed.Rotation == Rot4.North)
                 {
                     // Bottom row is at top
-                    if (bedSize.x == 1)
-                    {
-                        minx = -maxEdgeOffset;
-                        maxx = maxEdgeOffset;
-                    }
-                    else if (slot % bedSize.x == 0)
+                    if (slot % bedSize.x == 0)
                     {
                         // Left
                         minx = -maxEdgeOffset;
                     }
-                    else if ((slot + 1) % bedSize.x == 0)
+                    if ((slot + 1) % bedSize.x == 0)
                     {
                         // Right
                         maxx = maxEdgeOffset;
@@ -169,12 +162,7 @@ namespace Beds2DPatch
                         minx = -edgeShift - maxOffset;
                         maxx = -edgeShift + maxEdgeOffset;
                     }
-                    if (bedSize.x == 1)
-                    {
-                        minz = -maxEdgeOffset;
-                        maxz = maxEdgeOffset;
-                    }
-                    else if ((slot + 1) % bedSize.x == 0)
+                    if ((slot + 1) % bedSize.x == 0)
                     {
                         // Bottom
                         minz = -maxEdgeOffset;
@@ -188,17 +176,12 @@ namespace Beds2DPatch
                 else if (bed.Rotation == Rot4.South)
                 {
                     // Bottom row on bottom
-                    if (bedSize.x == 1)
-                    {
-                        minx = -maxEdgeOffset;
-                        maxx = maxEdgeOffset;
-                    }
-                    else if (slot % bedSize.x == 0)
+                    if (slot % bedSize.x == 0)
                     {
                         // Left
                         minx = -maxEdgeOffset;
                     }
-                    else if (slot % bedSize.x == bedSize.x - 1)
+                    if (slot % bedSize.x == bedSize.x - 1)
                     {
                         // Right
                         maxx = maxEdgeOffset;
@@ -238,12 +221,7 @@ namespace Beds2DPatch
                         // Right
                         maxx = maxEdgeOffset;
                     }
-                    if (bedSize.x == 1)
-                    {
-                        minz = -maxEdgeOffset;
-                        maxz = maxEdgeOffset;
-                    }
-                    else if ((slot + 1) % bedSize.x == 0)
+                    if ((slot + 1) % bedSize.x == 0)
                     {
                         // Bottom
                         minz = -maxEdgeOffset;
